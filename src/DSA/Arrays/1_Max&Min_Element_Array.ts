@@ -17,7 +17,9 @@ function minElement(arr: number[]) {
   return min;
 }
 
-const array: number[] = [2, 3, 4, 5, 6, 7, 8];
+export default function display() {
+  const array: number[] = [2, 3, 4, 5, 6, 7, 8];
 
-console.log("max element of array is", maxElement(array));
-console.log("min element of array is", minElement(array));
+  console.log("max element of array is", maxElement(array));
+  console.log("min element of array is", minElement(array));
+}
