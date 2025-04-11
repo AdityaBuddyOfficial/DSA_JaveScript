@@ -1,10 +1,13 @@
-function searchRotatedSortedArray(arr: any, target: any) {
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+var search = function (arr, target) {
   let start = 0;
   let end = arr.length - 1;
-
-  while (start < end) {
-    let mid = start + (end - start) / 2;
-
+  while (start <= end) {
+    let mid = Math.floor(start + (end - start) / 2);
     if (arr[mid] === target) {
       return mid;
     }
@@ -22,4 +25,8 @@ function searchRotatedSortedArray(arr: any, target: any) {
       }
     }
   }
-}
+  return -1;
+};
+
+const arr = [4, 5, 6, 7, 0, 1, 2];
+search(arr, 7);
