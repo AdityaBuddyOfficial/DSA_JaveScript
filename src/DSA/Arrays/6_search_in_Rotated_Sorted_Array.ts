@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-var search = function (arr, target) {
+var search = function (arr:any, target:any) {
   let start = 0;
   let end = arr.length - 1;
   while (start <= end) {
